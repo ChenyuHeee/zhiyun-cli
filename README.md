@@ -10,7 +10,7 @@
 
 只使用自己的浙大账号读取本人可访问的课程，不做视频下载，不绕过任何权限控制。
 
-仓库地址：<https://github.com/ChenyuHeee/zhiyun-cli>（默认 private）。
+仓库地址：<https://github.com/ChenyuHeee/zhiyun-cli>。
 
 ## 给 AI Agent / Claude Code Skill
 
@@ -47,7 +47,8 @@ Agent 首次会问学号/密码，之后复用 `.env`；凭证大约一天过期
 需要 Python 3.9+。仓库可以直接用系统 Python 运行，也可以放在独立虚拟环境里：
 
 ```bash
-git clone git@github.com:ChenyuHeee/zhiyun-cli.git
+git clone https://github.com/ChenyuHeee/zhiyun-cli.git
+# 或使用 SSH：git clone git@github.com:ChenyuHeee/zhiyun-cli.git
 cd zhiyun-cli
 python3 -m venv .venv
 source .venv/bin/activate

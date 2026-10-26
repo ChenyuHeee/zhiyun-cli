@@ -15,6 +15,10 @@ dependencies = ["requests>=2.28"]
 [project.optional-dependencies]
 browser = ["playwright>=1.40"]
 
+[project.urls]
+Homepage = "https://github.com/ChenyuHeee/zhiyun-cli"
+Repository = "https://github.com/ChenyuHeee/zhiyun-cli"
+
 [project.scripts]
 zhiyun = "zhiyun.cli:main"
 
