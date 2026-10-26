@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zhiyun-cli"
+version = "0.1.0"
+description = "浙江大学智云课堂回放导出工具：字幕文字稿 + 课件图片"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "hechenyu" }]
+dependencies = ["requests>=2.28"]
+
+[project.optional-dependencies]
+browser = ["playwright>=1.40"]
+
+[project.scripts]
+zhiyun = "zhiyun.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["zhiyun*"]
